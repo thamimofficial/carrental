@@ -327,6 +327,14 @@ function Booking() {
 
             <h2 className="savedTitle">My Bookings</h2>
 
+            {/*
+              wrap table in this div, on mobile screen give it
+              overflow-x so user can swipe/scroll table sideways
+              instead of table getting all squeezed and broken
+            */}
+
+            <div className="tableScroll">
+
             <table className="savedTable">
 
               <thead>
@@ -376,6 +384,8 @@ function Booking() {
               </tbody>
 
             </table>
+
+            </div>
 
           </div>
         )}
@@ -594,6 +604,59 @@ function Booking() {
 
           .deleteBtn:hover {
             background-color: #fdeaea;
+          }
+
+          .tableScroll {
+            width: 100%;
+          }
+
+          /* MOBILE STYLE, screen 768px or smaller */
+          /* video they gave me show phone size layout, so I change things here */
+
+          @media (max-width: 768px) {
+
+            .bookingPage {
+              margin: 15px auto;
+              padding: 0 15px;
+            }
+
+            /* form and summary become one column, form on top */
+
+            .bookingGrid {
+              grid-template-columns: 1fr;
+              gap: 20px;
+            }
+
+            .formBox {
+              padding: 18px;
+            }
+
+            .dateRow {
+              grid-template-columns: 1fr;
+              gap: 12px;
+            }
+
+            /* country + phone was side by side, now stack full width */
+
+            .countryPhoneRow {
+              flex-direction: column;
+              gap: 12px;
+            }
+
+            .countrySelect {
+              width: 100%;
+            }
+
+            /* table can't shrink small enough for phone screen */
+            /* so let it scroll sideways instead of breaking */
+
+            .tableScroll {
+              overflow-x: auto;
+            }
+
+            .savedTable {
+              min-width: 600px;
+            }
           }
         `}
       </style>

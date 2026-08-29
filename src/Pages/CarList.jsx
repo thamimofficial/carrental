@@ -115,6 +115,37 @@ function CarList() {
             text-decoration: underline;
             margin-bottom: 20px;
           }
+
+          /* MOBILE STYLE, screen 768px or smaller */
+          /* on phone, filter row was too tight side by side */
+          /* so I make select and button go full width, one on top of other */
+
+          @media (max-width: 768px) {
+
+            .listMain {
+              padding: 20px 15px;
+            }
+
+            .filterRow {
+              flex-direction: column;
+              gap: 12px;
+              margin-bottom: 20px;
+            }
+
+            .brandSelect {
+              width: 100%;
+              box-sizing: border-box;
+            }
+
+            .searchBtn {
+              width: 100%;
+              height: 45px;
+            }
+
+            .pageTitle {
+              font-size: 18px;
+            }
+          }
         `}
       </style>
 

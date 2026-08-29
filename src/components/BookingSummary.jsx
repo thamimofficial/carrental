@@ -188,6 +188,31 @@ function BookingSummary({ car, days, formId }) {
             text-decoration: none;
             color: #111;
           }
+
+          /* MOBILE STYLE, screen 768px or smaller */
+
+          @media (max-width: 768px) {
+
+            .summaryBox {
+              padding: 18px;
+            }
+
+            /* car image was 220px wide fixed, too big for phone */
+            /* let it just take full width instead */
+
+            .summaryCar {
+              flex-direction: column;
+            }
+
+            .summaryImage {
+              width: 100%;
+              height: 180px;
+            }
+
+            .summaryTotal {
+              font-size: 24px;
+            }
+          }
         `}
       </style>
 

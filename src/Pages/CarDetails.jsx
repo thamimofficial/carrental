@@ -268,11 +268,11 @@ function CarDetails() {
                 Book Now
               </Link>
 
-              <a href="tel:+971563316023" className="roundBtn" aria-label="Call">
+              <a href="tel:+971000000000" className="roundBtn" aria-label="Call">
                 <FaPhoneAlt />
               </a>
 
-              <a href="https://wa.me/971563316023" className="roundBtn" aria-label="WhatsApp">
+              <a href="https://wa.me/971000000000" className="roundBtn" aria-label="WhatsApp">
                 <FaWhatsapp />
               </a>
 
@@ -296,6 +296,16 @@ function CarDetails() {
           </div>
 
         </div>
+
+        {/*
+          this bar only show on mobile (see css), it stay stick at
+          bottom of screen so user can always book, even while
+          scrolling through all the specs and text above
+        */}
+
+        <Link to={`/booking/${car.id}`} className="stickyBookBar">
+          Book Now
+        </Link>
 
       </main>
 
@@ -562,6 +572,71 @@ function CarDetails() {
             border-radius: 4px;
             font-size: 11px;
             cursor: pointer;
+          }
+
+          /* fixed bar hide on desktop, only mobile use it */
+
+          .stickyBookBar {
+            display: none;
+          }
+
+          /* MOBILE STYLE, screen 768px or smaller */
+          /* video they gave me show phone size layout, so I change things here */
+
+          @media (max-width: 768px) {
+
+            .pageBox {
+              padding: 20px 15px 90px;
+              /* extra bottom padding so sticky bar don't cover last text */
+            }
+
+            /* left and right side become one column, stack on top of other */
+
+            .twoSide {
+              grid-template-columns: 1fr;
+              gap: 20px;
+            }
+
+            .carImage {
+              height: 220px;
+            }
+
+            /* 5 spec cards, 3 in first row then 2 in second row */
+
+            .specCards {
+              grid-template-columns: repeat(3, 1fr);
+              gap: 8px;
+            }
+
+            .oneCard {
+              padding: 10px;
+            }
+
+            /* right side booking box, no more sticky since it just
+               sit in normal flow below everything now */
+
+            .bookingBox {
+              position: static;
+            }
+
+            /* the fixed yellow bar at very bottom of screen */
+
+            .stickyBookBar {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: fixed;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              height: 55px;
+              background-color: #f5cd22;
+              color: #111;
+              font-weight: 600;
+              font-size: 14px;
+              text-decoration: none;
+              z-index: 900;
+            }
           }
         `}
       </style>

@@ -127,6 +127,38 @@ function CarCard({ car }) {
             color: #777;
             margin-top: 20px;
           }
+
+          /* MOBILE STYLE, screen 768px or smaller */
+          /* on phone, image + text side by side was too squeezed */
+          /* so I stack image on top, text below, like in the video */
+
+          @media (max-width: 768px) {
+
+            .cardBox {
+              flex-direction: column;
+              gap: 12px;
+              padding: 10px;
+            }
+
+            .cardImageLink {
+              width: 100%;
+            }
+
+            .cardImage {
+              width: 100%;
+              height: 200px;
+            }
+
+            .cardPrice strong {
+              font-size: 28px;
+            }
+
+            .cardSpecs {
+              flex-wrap: wrap;
+              gap: 12px;
+              row-gap: 8px;
+            }
+          }
         `}
       </style>
 
