@@ -39,6 +39,10 @@ function CarList() {
             <option value="Lamborghini">Lamborghini</option>
             <option value="Ferrari">Ferrari</option>
             <option value="Aston Martin">Aston Martin</option>
+               <option value="Bently">Bently</option>
+                           <option value="Mercedes Benz">Mercedes Benz</option>
+
+
           </select>
 
           <button
