@@ -1,5 +1,5 @@
-import car1 from "../assets/Lamborghini.webp";
-import car2 from "../assets/Ferrari.webp";
+import car1 from "../assets/lamborghini.webp";
+import car2 from "../assets/ferrari.webp";
 import car3 from "../assets/porche.webp";
 import car4 from "../assets/bentley.webp";
 import car5 from "../assets/benzg63.webp";
