@@ -94,7 +94,7 @@ function BookingSummary({ car, days, formId }) {
             padding: 25px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            font-family: "Poppins", sans-serif;
+            font-family: "Outfit", sans-serif;
           }
 
           .summaryTitle {
@@ -170,7 +170,7 @@ function BookingSummary({ car, days, formId }) {
             font-size: 12px;
             font-weight: 600;
             cursor: pointer;
-            font-family: "Poppins", sans-serif;
+            font-family: "Outfit", sans-serif;
           }
 
           .readMoreBtn {
@@ -181,7 +181,7 @@ function BookingSummary({ car, days, formId }) {
             border-radius: 8px;
             font-size: 11px;
             cursor: pointer;
-            font-family: "Poppins", sans-serif;
+            font-family: "Outfit", sans-serif;
             display: flex;
             align-items: center;
             justify-content: center;

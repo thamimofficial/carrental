@@ -320,7 +320,7 @@ function CarDetails() {
           .mainPage {
             background-color: #fff9f0;
             min-height: 100vh;
-            font-family: "Poppins", sans-serif;
+            font-family: "Outfit", sans-serif;
           }
 
           .pageBox {

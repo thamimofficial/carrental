@@ -124,7 +124,7 @@ function Header() {
           .headerBox {
             background-color: #fff;
             border-bottom: 1px solid #eee;
-            font-family: "Poppins", sans-serif;
+            font-family: "Outfit", sans-serif;
           }
 
           .headerInner {
@@ -156,6 +156,8 @@ function Header() {
           .navItem {
             text-decoration: none;
             color: #222;
+            font-family: "Outfit", sans-serif;
+            font-weight: 500;
           }
 
           .headerIcons {

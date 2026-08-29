@@ -402,7 +402,7 @@ function Booking() {
             margin: 30px auto;
             padding: 0 20px;
             box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
+            font-family: "Outfit", sans-serif;
           }
 
           .bookingGrid {
@@ -461,7 +461,7 @@ function Booking() {
             padding: 8px 10px;
             font-size: 13px;
             outline: none;
-            font-family: "Poppins", sans-serif;
+            font-family: "Outfit", sans-serif;
           }
 
           .timeInput {
@@ -471,7 +471,7 @@ function Booking() {
             padding: 8px;
             font-size: 13px;
             outline: none;
-            font-family: "Poppins", sans-serif;
+            font-family: "Outfit", sans-serif;
           }
 
           .textInput {
@@ -483,7 +483,7 @@ function Booking() {
             box-sizing: border-box;
             font-size: 13px;
             outline: none;
-            font-family: "Poppins", sans-serif;
+            font-family: "Outfit", sans-serif;
           }
 
           .countryPhoneRow {
@@ -499,7 +499,7 @@ function Booking() {
             padding: 0 8px;
             font-size: 13px;
             background-color: #fff;
-            font-family: "Poppins", sans-serif;
+            font-family: "Outfit", sans-serif;
           }
 
           .phoneInput {
@@ -510,7 +510,7 @@ function Booking() {
             padding: 0 12px;
             font-size: 13px;
             outline: none;
-            font-family: "Poppins", sans-serif;
+            font-family: "Outfit", sans-serif;
           }
 
           .termsBlock {
@@ -545,7 +545,7 @@ function Booking() {
             font-size: 12px;
             font-weight: 600;
             text-decoration: underline;
-            font-family: "Poppins", sans-serif;
+            font-family: "Outfit", sans-serif;
           }
 
           /* saved bookings list, show below the grid */

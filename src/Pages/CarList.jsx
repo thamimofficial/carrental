@@ -73,7 +73,7 @@ function CarList() {
           .listPage {
             background-color: #fff9f0;
             min-height: 100vh;
-            font-family: "Poppins", sans-serif;
+            font-family: "Outfit", sans-serif;
           }
 
           .listMain {
@@ -93,7 +93,7 @@ function CarList() {
             padding: 15px;
             border: 1px solid #d8b51e;
             border-radius: 8px;
-            font-family: "Poppins", sans-serif;
+            font-family: "Outfit", sans-serif;
           }
 
           .searchBtn {
@@ -102,7 +102,7 @@ function CarList() {
             border-radius: 8px;
             background-color: #f5cd22;
             font-weight: bold;
-            font-family: "Poppins", sans-serif;
+            font-family: "Outfit", sans-serif;
             cursor: pointer;
           }
 
