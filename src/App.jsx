@@ -4,9 +4,9 @@ import {
   Route
 } from "react-router-dom";
 
-import CarList from "./pages/CarList";
-import CarDetails from "./pages/CarDetails";
-import Booking from "./pages/Booking";
+import CarList from "./Pages/CarList";
+import CarDetails from "./Pages/CarDetails";
+import Booking from "./Pages/Booking";
 
 function App() {
   return (
