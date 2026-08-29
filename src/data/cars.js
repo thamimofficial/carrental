@@ -1,6 +1,9 @@
-import car1 from "../assets/lamborghini.webp";
-import car2 from "../assets/ferrari.webp";
+import car1 from "../assets/Lamborghini.webp";
+import car2 from "../assets/Ferrari.webp";
 import car3 from "../assets/porche.webp";
+import car4 from "../assets/bentley.webp";
+import car5 from "../assets/benzg63.webp";
+
 
 const cars = [
   {
@@ -115,7 +118,89 @@ const cars = [
 
     drivingFeel:
       "The DB12 is a proper grand tourer, so it's built to feel relaxed on a long highway run and still tighten up when you want it to. Four seats mean you can actually bring people along instead of just showing off."
-  }
+  },
+
+  {
+    id: 4,
+    brand: "Bentley",
+    model: "Continental GTC",
+    price: 2950,
+    year: 2025,
+    engine: "4.0L V8",
+    engineSize: "4.0L V8",
+    engineType: "Petrol",
+    acceleration: "3.4 Seconds",
+    seats: 4,
+    color: "Black",
+    horsepower: "771 HP",
+    topSpeed: "285 km/h",
+
+    // no real photo yet, so using car1 (lamborghini) as a placeholder
+    // swap this to the real Bentley image once it's ready
+    image: car4,
+
+    description:
+      "Bentley Continental GTC is a hybrid-assisted V8 convertible, combining 771 hp with Bentley's grand-touring comfort.",
+
+    bookingInfo: [
+      "This Continental GTC is a specific 2025 unit finished in Black over a four-seat convertible cabin, carrying Bentley's most powerful current GTC specification at 771 hp.",
+      "This particular unit has passed our full multi-point inspection before being listed for rental, and is prepped fresh before every booking."
+    ],
+
+    pricingInfo: [
+      "The rental price for this car is AED 2,950 per day. As one of the most in-demand convertibles in our fleet, it books out quickly during peak season and on weekends, so book 3-5 days in advance.",
+      "Members of our no-deposit membership program can skip the standard security deposit and get priority access to this specific unit when demand is high."
+    ],
+
+    whyChoose: [
+      "Black brings out the Continental GTC's long bonnet and sweeping roofline, giving it a grand-touring elegance rather than an aggressive look.",
+      "With the roof down, the Black exterior frames the cabin's lighter leather trim beautifully under Dubai's evening lighting at waterfront venues and hotel arrivals."
+    ],
+
+    drivingFeel:
+      "The hybrid-assisted V8 blends immediate low-rev torque fill from its electric assistance with the deep growl of Bentley's twin-turbo V8, reaching 100 km/h in 3.4 seconds through an all-wheel-drive system built for year-round use. With the roof down it settles into effortless high-speed cruising, and with it up, wind and road noise stay remarkably well suppressed for a convertible."
+  },
+
+  {
+    id: 5,
+    brand: "Mercedes Benz",
+    model: "G63 AMG",
+    price: 1700,
+    year: 2025,
+    engine: "4.0L V8",
+    engineSize: "4.0L V8",
+    engineType: "Petrol",
+    acceleration: "4.5 Seconds",
+    seats: 5,
+    color: "White",
+    horsepower: "577 HP",
+    topSpeed: "200 km/h",
+
+    // no real photo yet, so using car1 (lamborghini) as a placeholder
+    // swap this to the real G63 image once it's ready
+    image: car5,
+
+    description:
+      "White Mercedes Benz G63 AMG with the full AMG specification, 577 hp and 22-inch alloy wheels, equally at home on city streets and desert trails.",
+
+    bookingInfo: [
+      "This G63 AMG is a specific 2025 unit finished in White over a Nappa leather five-seat cabin, popular for landmark tours thanks to its clean finish photographing well against both desert and city skyline.",
+      "This particular car has been detailed and safety-checked ahead of every booking, and it's one of our most popular Mercedes Benz Rent choices."
+    ],
+
+    pricingInfo: [
+      "The rental price for this car is AED 1,700 per day. As a favourite for sightseeing and desert safari itineraries, this unit is in steady demand, so book 3-5 days in advance.",
+      "Members of our no-deposit membership program can skip the standard security deposit and get priority access to this specific unit when demand is high."
+    ],
+
+    whyChoose: [
+      "White paintwork over the flared wheel arches and stainless steel skid plates gives this unit a clean, striking presence outside the Burj Khalifa or Dubai Mall.",
+      "The same off-road hardware makes it a genuinely capable choice for a run out to the Dubai Desert Conservation Reserve, with high ground clearance and a multi-terrain system."
+    ],
+
+    drivingFeel:
+      "With 577 hp and 850 Nm of torque from the twin-turbo V8, this G63 AMG reaches 100 km/h in 4.5 seconds. AMG Performance 4MATIC all-wheel drive and adaptive suspension adjust automatically between smooth highway cruising and rougher desert terrain, giving this White unit genuine versatility across a full day of sightseeing and adventure."
+}
 ];
 
 export default cars;
