@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FaCalendarAlt } from "react-icons/fa";
 
 function BookingSummary({ car, days, formId }) {
@@ -60,10 +61,12 @@ function BookingSummary({ car, days, formId }) {
 
       <div className="summaryBtnRow">
 
-        {/*this button is NOT inside the <form> tag (it lives in a
+        {/*
+          this button is NOT inside the <form> tag (it lives in a
           different component), so a normal type="submit" does
-          nothing here The "form" attribute tells the browser
-          which form to submit, using the id passed down as a prop.*/}
+          nothing here. The "form" attribute tells the browser
+          which form to submit, using the id passed down as a prop.
+        */}
 
         <button
           type="submit"
@@ -73,12 +76,12 @@ function BookingSummary({ car, days, formId }) {
           Submit My Booking
         </button>
 
-        <button
-          type="button"
+        <Link
+          to={`/car/${car.id}`}
           className="readMoreBtn"
         >
           Read More →
-        </button>
+        </Link>
 
       </div>
 
@@ -179,6 +182,11 @@ function BookingSummary({ car, days, formId }) {
             font-size: 11px;
             cursor: pointer;
             font-family: "Poppins", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #111;
           }
         `}
       </style>

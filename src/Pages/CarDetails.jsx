@@ -268,11 +268,11 @@ function CarDetails() {
                 Book Now
               </Link>
 
-              <a href="tel:+971000000000" className="roundBtn" aria-label="Call">
+              <a href="tel:+971563316023" className="roundBtn" aria-label="Call">
                 <FaPhoneAlt />
               </a>
 
-              <a href="https://wa.me/971000000000" className="roundBtn" aria-label="WhatsApp">
+              <a href="https://wa.me/971563316023" className="roundBtn" aria-label="WhatsApp">
                 <FaWhatsapp />
               </a>
 
