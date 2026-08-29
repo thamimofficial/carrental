@@ -79,7 +79,7 @@ function CarCard({ car }) {
             display: flex;
             gap: 25px;
             margin-bottom: 20px;
-            font-family: "Poppins", sans-serif;
+            font-family: "Outfit", sans-serif;
           }
 
           .cardImageLink {
