@@ -125,6 +125,9 @@ function Header() {
             background-color: #fff;
             border-bottom: 1px solid #eee;
             font-family: "Outfit", sans-serif;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
           }
 
           .headerInner {

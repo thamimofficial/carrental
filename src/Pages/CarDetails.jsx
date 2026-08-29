@@ -474,7 +474,7 @@ function CarDetails() {
             border-radius: 8px;
             padding: 18px;
             position: sticky;
-            top: 20px;
+            top: 100px;
             align-self: start;
           }
 
